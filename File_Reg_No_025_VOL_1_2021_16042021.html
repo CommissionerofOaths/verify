@@ -14,24 +14,34 @@
       background-attachment: fixed;
       background-size: 100% 100%;
     }
+	</style>
+	<style>
+        #blink {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2d38be;
+            transition: 0.5s;
+        }
     </style>
 </head>
 
 <body>
 
-
 <h3><strong style="
-	color: red;">அறிவிப்பு<br>
-	<br>
-	<br>
- நிகழ்வு உண்மைதண்மைக்கு பின் இதர அறிவிப்பு வெளியிடப்படும் </strong></h3>
+	color: blue;">அறிவிப்பு<BR>
+
+<p id="blink"> நிகழ்வு உண்மைதண்மைக்கு பின் இதர அறிவிப்பு வெளியிடப்படும் </BR> </strong></h3> </p>
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>
+
 <br>
-<br>
- <marquee width="95%" direction="left" height="100px" style="color:rgb(245, 11, 11)">
+ <marquee width="60%" direction="left" height="100px" style="color:rgb(245, 11, 11)">
 	<strong>அசல் ஆவணங்கள் பரிசோதிக்கப்படவில்லை, விபத்து நிகழ்வு குறித்த உண்மைதன்மை மற்றும் கூடுதல் தகவல் தேவை</strong>
 	</marquee>
-<br>
-<br>
 <br>
 	<table border="1" cellspacing="0" width="550" height="100" color:="" blue;="" font-size:="" x-large;="" style="
     color: blue;
